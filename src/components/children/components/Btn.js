@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-import Input from "./Input"
 
 export default class Btn extends Component {
 	// constructor (props) {
@@ -11,11 +10,7 @@ export default class Btn extends Component {
  //      		endYr: props.endYr
  //    }
  //    }
-    // handleSubmit = (ev) => {
-    // ev.preventDefault();
-    //   console.log('something was entered');
-    //   console.log('this.state: ', this.state)
-    // }
+
 
 
 	render() {

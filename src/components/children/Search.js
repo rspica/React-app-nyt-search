@@ -3,7 +3,6 @@ import React, { Component } from "react";
 //import Helpers from "./utils/helpers";
 import Input  from "./components/Input";
 import Btn    from "./components/Btn"
-import layout from "./../layout"
 
 
   // Here we describe this component's render method and export the component back for use in other files
@@ -58,13 +57,7 @@ export default class Search extends Component {
                   handleClick = { this.props.handleClick }
                   type    = { "submit" } 
                   label   = { "Find It" } 
-
                 />
-                <Btn 
-                handleClick = { this.props.handleClick }
-                handleSubmit = { this.props.handleSubmit }
-                label   = { "Clear" }
-                type    = { "button" }/>
               </div>
             </div>
         </div>

@@ -57,8 +57,31 @@ export default class Layout extends Component {
 
 // handles the clear button
   handleClick = () => {
-        this.setState({ searchSbjt: "" });
-  }
+    if (!this.state.searchSbjt) {
+      alert('Please enter a subject to search');
+      return false
+    } 
+
+    else if  (!this.state.startYr) {
+      alert('Please enter the start date for the search');
+      return false
+    }  
+    
+    else if (!this.state.endYr) {
+      alert('Please enter the end date for the search');
+      return false
+    } 
+    
+    else if ((this.state.searchSbjt) && (this.state.startYr) && (this.state.endYr)) {
+        alert('Lets search ' + this.state.searchSbjt + ' between ' + this.state.startYr + ' and ' + this.state.endYr);
+        // clears all 3 input fields
+        this.setState({
+        searchSbjt: "",
+        startYr: "",
+        endYr: ""
+        });
+      }
+    }
 
 
   render() {
