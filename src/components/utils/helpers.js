@@ -1,18 +1,17 @@
-// Include the axios package for performing HTTP requests (promise based alternative to request)
+// axios package preforms HTTP requests (that promise based alternative to request)
 import axios  from "axios";
-import search from "./../children/Search"
 
 // NYT API autorization key
 var nytAuthKey = "8c93a771d5cf4414b9f1a3292e6970d8";
 
 // Search Parameters
-var searchSbj = props.searchSbjt;
+var searchSbj = this.state.searchSbjt;
 var numResults = 5;
-var startYr = props.startYr;
-var endYr = props.endYr;
+var startYr = this.state.startYr;
+var endYr = this.state.endYr;
 
 // Helper functions (in this case the only one is runQuery)
-export default Helpers = {
+export default helpers = {
 
   runQuery: function(searchSbj, startYr, endYr) {
 

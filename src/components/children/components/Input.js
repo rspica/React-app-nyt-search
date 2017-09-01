@@ -13,23 +13,6 @@ export default class Input extends Component {
         };
     }
 
-// var queryParams = {};
-
-// searchParams = (value) => {
-//     queryParams = {
-//     searchSbjt: this.state.value,
-//     startYr: this.state.value,
-//     endYr: this.state.value,
-//     }
-// }
-
-    // inputChangeHandler = (ev) => {
-    //     this.setState({
-    //         value: ev.target.value
-    //     });
-    //     console.log(ev.target.value)
-    // }
-
 
     render() {
 
@@ -41,11 +24,12 @@ export default class Input extends Component {
                     type="text"
                     id={ this.props.id }
                     name={ this.props.id }
-                    onChange={e => {this.props.inputChangeHandler(e.currentTarget.value, this.props.id)}}
+                    onChange={ (ev) => {this.props.inputChangeHandler(ev.currentTarget.value, this.props.id)} }
                     value={ this.props.value }
                     placeholder={ this.props.placeholder }
                     required
                 />
+
             </div>
 		)
 	}

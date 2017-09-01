@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 
 // include all of the sub-components
-// import Helpers from "./utils/helpers";
+// import helpers from "./utils/helpers";
 import Search  from "./children/Search";
 import Results from "./children/Results";
 import Saved   from "./children/Saved";
@@ -24,15 +24,48 @@ import Saved   from "./children/Saved";
   //     }.bind(this)); // binds "this" to setState to use this.setState
   //   }
   // setSubject = (subject)=> {
-  //   this.setState({ searchSbjt: subject });
+  //   this.inputChangeHandler({ searchSbjt: subject });
   // },
+
+
 
 
 // Sets up the Layout components and Export it back for use in app.js file
 export default class Layout extends Component {
+    constructor(props) {
+    super(props);
+    this.state = {
+      searchSbjt: props.searchSbjt,
+      startYr: props.startYr,
+      endYr: props.endYr
+    }
+    this.inputChangeHandler = this.inputChangeHandler.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  inputChangeHandler = (value, key) => {
+    this.setState({
+      [key]: value
+    });
+    console.log('value: ',value, 'key: ' ,key) 
+    };
+
+  handleSubmit = () => {
+    console.log('this.state: ', this.state)
+    };
+
+// handles the clear button
+  handleClick = () => {
+        this.setState({ searchSbjt: "" });
+  }
 
 
   render() {
+    console.log("inputChangeHandler value: ", this.inputChangeHandler)
+
+    console.log("line 55 layout looking at this.state: ", this.state)
+
     return (
       <div className="container">
         
@@ -46,7 +79,11 @@ export default class Layout extends Component {
 
         <div className="row">
             <div className="col-md-12">
-              <Search setSubject={this.setSubject} />
+              <Search 
+              inputChangeHandler = { this.inputChangeHandler }
+              handleClick = { this.handleClick }
+              handleSubmit = { this.handleSubmit } 
+              />
             </div>
         </div>
 
