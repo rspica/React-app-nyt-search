@@ -27,13 +27,13 @@ To install the this application locally follow the instructions below:
 
 With the command line:
 
-1 git clone https://github.com/rspica/React-app-nyt-search.git
-2 cd React-app-nyt-search
-3 npm install
-4 Run the React-app-nyt-search in development mode from the command line via `npm start` or `yarn start`
-The React-app-nyt-search app will run locally, the default port is set to 3000.
+1. git clone https://github.com/rspica/React-app-nyt-search.git  
+2. cd React-app-nyt-search  
+3. npm install  
+4. Run the React-app-nyt-search in development mode from the command line via `npm start` or `yarn start`
+The React-app-nyt-search app will run locally, the default port is set to 3000.  
 
-You can now view nyt-react-search in the browser. The app webpage can be access via the url: `http://localhost:3000/`
+You can now view nyt-react-search in the browser. The app webpage can be access via the url: `http://localhost:3000/`  
 
 
 
