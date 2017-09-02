@@ -4,17 +4,17 @@ This is a New York Times Article Search application was created using the follow
 
 Click on the indvidual headlines to be re-directed to the full New York Times articles.
 
-##Functionality
+## Functionality
 
-###Backend
+### Backend
 This app uses express to serve routes and mongoose to interact with a MongoDB database.
 
-###Frontend
+### Frontend
 This app uses ReactJS for rendering view components, axios for the AJAX api calls, and some bootstrap for styling.
 
 In order to transpile the JSX code, webpack and babel were utilized. All of the JSX code in the /app folder was transpiled into the bundle.js file located in the /public folder.
 
-###Dependencies
+### Dependencies
  ```"axios": "^0.16.2",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
