@@ -69,7 +69,7 @@ export default class Layout extends Component {
   //   }.bind(this));
   // },
 
-  // // If the component changes (i.e. if a search is entered)...
+  // If the component changes (i.e. if a search is entered)...
   // // this is a way to run code when someone changes the component ie an input field.
   // componentDidUpdate: function() {
 
@@ -122,12 +122,10 @@ export default class Layout extends Component {
 
     return (
       <div className="container">
-        
-        <div className="jumbotron">
-          <h1><span className="glyphicons glyphicons-newspaper"></span></h1>
-          <h1 className="text-center">New York Times Search</h1>
+        <div className="jumbotron jumbotron-image">
+          <h1 className="text-center"><span class="glyphicons glyphicons-newspaper" aria-hidden="true"></span>New York Times Search</h1>
           <p className="text-center">
-          <em>Search for and annotate articles of interest.</em>
+          <em>Search news articles of interest.</em>
           </p>
         </div>
 

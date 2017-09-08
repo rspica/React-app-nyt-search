@@ -1,0 +1,12 @@
+
+.jumbotron-image {
+    background: url("./images/newspaper-stack.jpg")  no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.jumbotron {
+    color: #fff;
+    min-height: 300px;
+}

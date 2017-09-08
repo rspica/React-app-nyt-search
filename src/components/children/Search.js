@@ -3,6 +3,7 @@ import React, { Component } from "react";
 //import Helpers from "./utils/helpers";
 import Input  from "./components/Input";
 import Btn    from "./components/Btn"
+import "./search-assets/search.css"
 
 
   // Here we describe this component's render method and export the component back for use in other files
